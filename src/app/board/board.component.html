@@ -1,0 +1,17 @@
+
+  <h3> current player: {{ player }}</h3>
+  <h2 *ngIf="winner">
+    player {{ winner}} won the game
+
+</h2>
+  <section>
+    <app-square 
+    *ngFor="let val of squares; let i=index"
+    [value]="val"
+    (click)="makemove(i)"
+    >
+    </app-square>
+</section>
+<button class="btn btn-warning" (click)="resetgame()"> RESET</button>
+  
+  

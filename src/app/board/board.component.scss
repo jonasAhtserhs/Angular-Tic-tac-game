@@ -1,0 +1,23 @@
+section{
+    display:grid;
+    grid-template-columns:180px 180px 180px;
+    grid-gap: 0px;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+app-square {
+display: flex;
+border: 1px solid gray;
+height:150px;
+justify-content: center;
+align-items: center;
+font-size:7rem;
+cursor: pointer;
+
+
+
+}
+
